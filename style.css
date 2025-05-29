@@ -1,0 +1,178 @@
+/* style.css dengan nuansa coklat pastel */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdf6f0;
+  color: #4b2e2e;
+}
+
+header {
+  background-color: #d2b48c; /* tan pastel */
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #4b2e2e;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fffdf7;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to bottom right, #f6e7d7, #e8d4c1);
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #5b3e2b;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #7b5b4b;
+}
+
+.btn {
+  background-color: #a67c52;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #8b5e3c;
+}
+
+footer {
+  background-color: #e3c8aa;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+  color: #4b2e2e;
+}
+
+/* Katalog Produk */
+.produk {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.produk h2 {
+  font-size: 32px;
+  color: #5b3e2b;
+  margin-bottom: 40px;
+}
+
+.produk-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.produk-item {
+  background-color: #fff9f3;
+  border-radius: 16px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.produk-item:hover {
+  transform: scale(1.05);
+}
+
+.produk-item img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.produk-item h3 {
+  margin: 0;
+  color: #7a5133;
+}
+
+.produk-item p {
+  color: #8a6c5e;
+  font-weight: bold;
+}
+
+#kontak {
+  max-width: 500px;
+  margin: 50px auto; /* Ini yang buat elemen ke tengah */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#kontak h2 {
+  text-align: center;
+}
+
+#kontak form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#kontak input,
+#kontak textarea {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#kontak button {
+  padding: 10px;
+  background-color: #5b3e2b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#kontak button:hover {
+  background-color: #5b3e2b;
+}
+
+.info-kontak {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.info-kontak a {
+  color: #5b3e2b;
+  text-decoration: none;
+}
+
+.info-kontak a:hover {
+  text-decoration: underline;
+}

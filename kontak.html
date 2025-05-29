@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teguh Donat</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Teguh Donat</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="keranjang.html">Keranjang</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section id="kontak">
+  <h2>Kontak Kami</h2>
+  <form id="formKontak">
+    <label for="nama">Nama:</label><br>
+    <input type="text" id="nama" name="nama" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="pesan">Pesan:</label><br>
+    <textarea id="pesan" name="pesan" required></textarea><br><br>
+
+    <button type="submit">Kirim</button>
+  </form>
+  <p id="notifKontak" style="color: green;"></p>
+</section>
+
+<script>
+  document.getElementById("formKontak").addEventListener("submit", function(e) {
+    e.preventDefault();
+    
+    const nama = document.getElementById("nama").value;
+    const email = document.getElementById("email").value;
+    const pesan = document.getElementById("pesan").value;
+
+    // Simulasi kirim (kita cuma tampilkan di halaman karena belum pakai backend)
+    document.getElementById("notifKontak").textContent = Terima kasih, ${nama}! Pesanmu telah diterima.;
+
+    // Reset form
+    e.target.reset();
+  });
+</script>
+
+  <footer>
+    <p>&copy; 2025 Teguh Donat</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

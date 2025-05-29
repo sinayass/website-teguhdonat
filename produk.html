@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produk Donat</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Teguh Donat</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="keranjang.html">Keranjang</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="produk">
+      <h2>Katalog Donat</h2>
+      <div class="produk-list">
+        <!-- Donat 1 -->
+        <div class="produk-item">
+          <img src="images/donat-coklat.jpg" alt="Donat Coklat">
+          <h3>Donat Coklat</h3>
+          <p>Rp 7.000</p>
+          <p id="stok-donat-coklat">Stok: 10</p>
+          <button class="btn" onclick="TambahKeKeranjang('Donat Coklat', 7000, 'donat-coklat')">+ Keranjang</button>
+        </div>
+
+        <!-- Donat 2 -->
+        <div class="produk-item">
+          <img src="images/donat-strawberry.jpg" alt="Donat Strawberry">
+          <h3>Donat Strawberry</h3>
+          <p>Rp 7.000</p>
+          <p id="stok-donat-strawberry">Stok: 10</p>
+          <button class="btn" onclick="TambahKeKeranjang('Donat Strawberry', 7000, 'donat-strawberry')">+ Keranjang</button>
+        </div>
+
+        <!-- Donat 3 -->
+        <div class="produk-item">
+          <img src="images/donat-keju.jpg" alt="Donat Keju">
+          <h3>Donat Keju</h3>
+          <p>Rp 7.000</p>
+          <p id="stok-donat-keju">Stok: 10</p>
+          <button class="btn" onclick="TambahKeKeranjang('Donat Keju', 7000, 'donat-keju')">+ Keranjang</button>
+        </div>
+
+        <!-- Donat 4 -->
+        <div class="produk-item">
+          <img src="images/donat-caramel.jpg" alt="Donat Caramel">
+          <h3>Donat Caramel</h3>
+          <p>Rp 8.000</p>
+          <p id="stok-donat-caramel">Stok: 10</p>
+          <button class="btn" onclick="TambahKeKeranjang('Donat Caramel', 8000, 'donat-caramel')">+ Keranjang</button>
+        </div>
+
+        <!-- Donat 5 -->
+        <div class="produk-item">
+          <img src="images/donat-cookies&cream.jpg" alt="Donat Cookies & Cream">
+          <h3>Donat Cookies & Cream</h3>
+          <p>Rp 8.000</p>
+          <p id="stok-donat-cookies&cream">Stok: 10</p>
+          <button class="btn" onclick="TambahKeKeranjang('Donat Cookies & Cream', 8000, 'donat-cookies&cream')">+ Keranjang</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="produk">
+      <h2>Katalog Kue Kering</h2>
+      <div class="produk-list">
+        <!-- Kue 1 -->
+        <div class="produk-item">
+          <img src="images/kue-nastar.jpg" alt="Nastar">
+          <h3>Nastar 500 gr</h3>
+          <p>Rp 130.000</p>
+          <p id="stok-kue-nastar">Stok: 7</p>
+          <button class="btn" onclick="TambahKeKeranjang('Nastar', 130000, 'kue-nastar')">+ Keranjang</button>
+        </div>
+
+        <!-- Kue 2 -->
+        <div class="produk-item">
+          <img src="images/kue-kastengel.jpg" alt="Kastengel">
+          <h3>Kastengel 500 gr</h3>
+          <p>Rp 130.000</p>
+          <p id="stok-kue-kastengel">Stok: 7</p>
+          <button class="btn" onclick="TambahKeKeranjang('Kastengel', 130000, 'kue-kastengel')">+ Keranjang</button>
+        </div>
+
+        <!-- Kue 3 -->
+        <div class="produk-item">
+          <img src="images/kue-putrisalju.jpg" alt="Putri Salju">
+          <h3>Putri Salju 500 gr</h3>
+          <p>Rp 100.000</p>
+          <p id="stok-kue-putrisalju">Stok: 9</p>
+          <button class="btn" onclick="TambahKeKeranjang('Putri Salju', 100000, 'kue-putrisalju')">+ Keranjang</button>
+        </div>
+
+        <!-- Kue 4 -->
+        <div class="produk-item">
+          <img src="images/kue-kuping.jpg" alt="Kuping Gajah">
+          <h3>Kuping Gajah 500 gr</h3>
+          <p>Rp 60.000</p>
+          <p id="stok-kue-kuping">Stok: 7</p>
+          <button class="btn" onclick="TambahKeKeranjang('Kuping Gajah', 60000, 'kue-kuping')">+ Keranjang</button>
+        </div>
+
+        <!-- Kue 5 -->
+        <div class="produk-item">
+          <img src="images/kue-chocomede.jpg" alt="Choco Mede">
+          <h3>Choco Mede 500 gr</h3>
+          <p>Rp 130.000</p>
+          <p id="stok-kue-chocomede">Stok: 4</p>
+          <button class="btn" onclick="TambahKeKeranjang('Choco Mede', 130000, 'kue-chocomede')">+ Keranjang</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="produk">
+      <h2>Produk Lain</h2>
+      <div class="produk-list">
+        <!-- Produk 1 -->
+        <div class="produk-item">
+          <img src="images/produk-brownies.jpg" alt="Brownies Coklat">
+          <h3>Brownies Coklat</h3>
+          <p>Rp 60.000</p>
+          <p id="stok-produk-brownies">Stok: 3</p>
+          <button class="btn" onclick="TambahKeKeranjang('Brownies Coklat', 60000, 'produk-brownies')">+ Keranjang</button>
+        </div>
+
+        <!-- Produk 2 -->
+        <div class="produk-item">
+          <img src="images/produk-birthdaycake.jpg" alt="Birthday Cake">
+          <h3>Birthday Cake</h3>
+          <p>Rp 120.000</p>
+          <p id="stok-produk-birthdaycake">Stok: 5</p>
+          <button class="btn" onclick="TambahKeKeranjang('Birthday Cake', 120000, 'produk-birthdaycake')">+ Keranjang</button>
+        </div>
+
+        <!-- Produk 3 -->
+        <div class="produk-item">
+          <img src="images/produk-lapislegit.jpg" alt="Lapis Legit">
+          <h3>Lapis Legit</h3>
+          <p>Rp 200.000</p>
+          <p id="stok-produk-lapislegit">Stok: 3</p>
+          <button class="btn" onclick="TambahKeKeranjang('Lapis Legit', 200000, 'produk-lapislegit')">+ Keranjang</button>
+        </div>
+
+        <!-- Produk 4 -->
+        <div class="produk-item">
+          <img src="images/produk-lapissurabaya.jpg" alt="Lapis Surabaya">
+          <h3>Lapis Surabaya</h3>
+          <p>Rp 65.000</p>
+          <p id="stok-produk-lapissurabaya">Stok: 7</p>
+          <button class="btn" onclick="TambahKeKeranjang('Lapis Surabaya', 65000, 'produk-lapissurabaya')">+ Keranjang</button>
+        </div>
+
+        <!-- Produk 5 -->
+        <div class="produk-item">
+          <img src="images/produk-chiffon.jpg" alt="Chiffon Cake">
+          <h3>Chiffon Cake</h3>
+          <p>Rp 95.000</p>
+          <p id="stok-produk-chiffon">Stok: 5</p>
+          <button class="btn" onclick="TambahKeKeranjang('Chiffon Cake', 95000, 'produk-chiffon')">+ Keranjang</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Teguh Donat</p>
+  </footer>
+ <script>
+    const stokProduk = {
+  "donat-coklat": 10,
+  "donat-keju": 10,
+  "donat-stroberi": 10,
+  "donat-caramel": 10,
+  "donat-cookies": 10,
+  "kue-nastar": 7,
+  "kue-kastengel": 7,
+  "kue-chocomede": 4,
+  "kue-putrisalju": 9,
+  "kue-kuping": 7,
+  "produk-brownies": 3,
+  "produk-birthdaycake": 5,
+  "produk-chiffon": 5,
+  "produk-lapislegit": 3,
+  "produk-lapissurabaya": 7
+};
+
+if (!localStorage.getItem('stok')) {
+  localStorage.setItem('stok', JSON.stringify(stokProduk));
+}
+  function TambahKeKeranjang(nama, harga, idProduk) {
+    let stok = JSON.parse(localStorage.getItem('stok'));
+
+    if (stok[idProduk] > 0) {
+        stok[idProduk]--;
+        localStorage.setItem('stok', JSON.stringify(stok));
+
+        let keranjang = JSON.parse(localStorage.getItem('keranjang')) || [];
+        keranjang.push({ nama, harga });
+        localStorage.setItem('keranjang', JSON.stringify(keranjang));
+
+        let stokEl = document.getElementById('stok-' + idProduk);
+        if (stokEl !== null) {
+            stokEl.textContent = 'Stok: ' + stok[idProduk];
+        }
+
+        alert(nama + ' berhasil ditambahkan ke keranjang!');
+    } else {
+        alert('Maaf, stok ' + nama + ' habis.');
+
+    }
+  
+  }
+ </script>
+</body>
+</html>
